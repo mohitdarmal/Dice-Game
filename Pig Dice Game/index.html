@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dice Roll Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container whole-box-bg-color">
+        <div class="col-md-12 game-rule text-right">
+        Game Rules?
+        </div>
+
+
+        <div class="container">
+            <div class="col-md-4 col-sm-4 col-xs-4"></div>
+            <div class="text-center col-md-4 col-sm-4 col-xs-12 new-game">
+               <h4> <span class="glyphicon glyphicon-play"></span> New Game </h4>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4"> </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <!---Player one start-->
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center" id="player-one">
+                    <h1 class="p1active">Player 1
+                        <span class="active"> </span>
+                    </h1>
+                    <h1 class="player-score0">0 </h1>
+                    <br>
+                    <div class="current-score-section">
+                    <p> Current </p>
+                    <b><p class="current-score0"> 0 </p> </b>
+                </div>
+                </div>
+                <!---Player one end-->
+
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <div class="dice-random-number">
+                        <img src="images/dice-6.png" alt=""> </div>
+                    <h4 class="roll-dice">
+                        <span class="glyphicon glyphicon-refresh"></span> Roll Dice </h4>
+                    <h4 class="hold-btn">
+                        <span class="glyphicon glyphicon-download-alt"></span> Hold </h4>
+                </div>
+
+
+                <!---Player two start-->
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center" id="player-two">
+                    <h1 class="p2active">Player 2
+                        <span> </span>
+                    </h1>
+                    <h1 class="player-score1">0 </h1>
+                    <br>
+                    <div class="current-score-section">
+                        <p> Current </p>
+                       <b> <p class="current-score1"> 0 </p> </b>
+                    </div>
+                </div>
+                <!---Player two end-->
+            </div>
+        </div>
+
+        <div class="winner-text col-md-12 text-center"> </div>
+
+    </div>
+
+            
+    <div class="games-rules-text col-md-12">
+        <div class="col-md-11 col-xs-11">
+                <h4>1). The game has <b>2 Players</b>, playing in rounds. </h4>
+
+                <h4>2). In each turn, a player rolls a dice as many times as he wishes. Each result get added to his <b>ROUND</b> score.</h4>
+                
+                <h4>3). But if the player rolls a <b>1</b>, all his round score gets <b>lost.</b> After that its the next player's turn </h4>
+                
+                <h4>4). The player can choose to <b>HOLD</b> , which means that his round score gets added to his <b>Global </b>score. After that it's the next player turn. </h4>
+                
+                <h4>5). The first player to reach to <b>100</b> points on <b>Global Score</b> wins the game </h4>
+             </div>
+           <div class="col-md-1 col-xs-1 close">
+               <img src="images/close.png" alt="">
+           </div>
+
+    </div>
+
+
+</body>
+
+
+
+<script src="script.js">
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</html>
