@@ -45,11 +45,14 @@
 
                 <div class="col-md-4 col-sm-4 col-xs-4 text-center">
                     <div class="dice-random-number">
-                        <img src="images/dice-6.png" alt=""> </div>
+                        <img class="img1" src="images/dice-6.png" alt=""> 
+                        <img class="img2" src="images/dice-6.png" alt=""> 
+                    </div>
                     <h4 class="roll-dice">
                         <span class="glyphicon glyphicon-refresh"></span> Roll Dice </h4>
                     <h4 class="hold-btn">
                         <span class="glyphicon glyphicon-download-alt"></span> Hold </h4>
+                        <input id="final-score-input" class="final-score" type="text" placeholder="Enter Final Score">
                 </div>
 
 
@@ -80,11 +83,15 @@
 
                 <h4>2). In each turn, a player rolls a dice as many times as he wishes. Each result get added to his <b>ROUND</b> score.</h4>
                 
-                <h4>3). But if the player rolls a <b>1</b>, all his round score gets <b>lost.</b> After that its the next player's turn </h4>
+                <h4>3). But if the player rolls a <b>1</b> of both dice, all his round score gets <b>lost.</b> After that its the next player's turn. </h4>
                 
                 <h4>4). The player can choose to <b>HOLD</b> , which means that his round score gets added to his <b>Global </b>score. After that it's the next player turn. </h4>
+
+                <h4>5). You can also set the <b>Winning Score</b> from to put the number in <b>Enter Final Score</b> box.  </h4>
+
+                <h4>6). If you doesn't choose the winning score.<b> The default winning score is 200.</b></h4>
                 
-                <h4>5). The first player to reach to <b>100</b> points on <b>Global Score</b> wins the game </h4>
+                <h4>7). The first player to reach to <b>200</b> points on <b>Global Score</b> wins the game. </h4>
              </div>
            <div class="col-md-1 col-xs-1 close">
                <img src="images/close.png" alt="">
